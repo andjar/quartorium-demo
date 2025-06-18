@@ -10,3 +10,11 @@ bibliography: references.bib
 
 ## Section
 This is a simple placeholder for the manuscript's main document [@knuth84].
+
+```{r}
+#| label: fig-plot
+#| fig-cap: "A simple plot"
+plot(1)
+```
+
+@fig-plot is a simple plot.
