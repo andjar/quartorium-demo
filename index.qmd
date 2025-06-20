@@ -10,6 +10,15 @@ bibliography: references.bib
 
 ## Section
 This is a simple placeholder for the manuscript's main document [@knuth84].
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Proin ut turpis non sem ornare luctus non at turpis.
+Nunc a libero vel nibh feugiat tempor.
+Duis eget luctus elit.
+Sed interdum eget eros cursus fringilla.
+Quisque sit amet metus in sem tincidunt cursus id in massa.
+Aenean ullamcorper aliquet fermentum.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+Proin elementum posuere mauris.
 
 ```{r}
 #| label: fig-plot
@@ -18,3 +27,13 @@ plot(1)
 ```
 
 @fig-plot is a simple plot.
+Proin nec sapien nec sapien cursus bibendum et in metus.
+Sed eget pharetra quam.
+Phasellus vitae nulla leo.
+Fusce lacinia placerat nulla, ac varius nisl venenatis nec.
+Nunc cursus dictum tortor eget ornare.
+Etiam sed erat vel felis tristique cursus.
+Nam finibus arcu dolor, sed ornare purus imperdiet sit amet.
+Cras porttitor quam vitae commodo lobortis.
+Mauris eu feugiat massa. Donec vestibulum diam imperdiet tempus sagittis.
+Nullam tristique nisl at euismod consequat.
