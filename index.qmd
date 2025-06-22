@@ -11,8 +11,8 @@ This document is a simple demonstration of a Quarto manuscript.
 We will show how to include text, citations, a plot, a table, and a mathematical formula.
 All of these elements can be cross-referenced.
 
-For example, this is a citation to a classic work by Knuth [-@knuth1984].
-You can also cite in parentheses like this: (@knuth1984).
+For example, this is a citation to a classic work by Knuth [-@knuth84].
+You can also cite in parentheses like this: (@knuth84).
 
 # Analysis
 
