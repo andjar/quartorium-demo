@@ -2,7 +2,7 @@
 title: "A Basic Quarto Manuscript"
 author: "Your Name"
 date: last-modified
-bibliography: bibliography.bib
+bibliography: references.bib
 ---
 
 # Introduction
