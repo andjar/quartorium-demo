@@ -1,39 +1,64 @@
 ---
-title: Quartorium
-authors:
-  - name: Norah Jones
-    affiliation: The University
-    roles: writing
-    corresponding: true
-bibliography: references.bib
+title: "A Basic Quarto Manuscript"
+author: "Your Name"
+date: last-modified
+bibliography: bibliography.bib
 ---
 
-## Section
-This is a simple placeholder for the manuscript's main document [@knuth84].
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Proin ut turpis non sem ornare luctus non at turpis.
-Nunc a libero vel nibh feugiat tempor.
-Duis eget luctus elit.
-Sed interdum eget eros cursus fringilla.
-Quisque sit amet metus in sem tincidunt cursus id in massa.
-Aenean ullamcorper aliquet fermentum.
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-Proin elementum posuere mauris.
+# Introduction
+
+This document is a simple demonstration of a Quarto manuscript.
+We will show how to include text, citations, a plot, a table, and a mathematical formula.
+All of these elements can be cross-referenced.
+
+For example, this is a citation to a classic work by Knuth [-@knuth1984].
+You can also cite in parentheses like this: (@knuth1984).
+
+# Analysis
+
+In this section, we conduct a simple analysis.
+
+## Making a Plot
+
+We can easily create plots using a code chunk.
+@fig-cars shows a simple scatter plot of car stopping distances versus speed.
+We refer to this plot using its label, like this: see @fig-cars.
 
 ```{r}
-#| label: fig-plot
-#| fig-cap: "A simple plot"
+#| label: fig-cars
+#| fig-cap: "A scatter plot of the 'cars' dataset, showing stopping distance as a function of speed."
+#| warning: false
+
+# This is an R code chunk that generates a plot.
+# Quarto can also use Python, Julia, and Observable JS.
 plot(1)
 ```
 
-@fig-plot is a simple plot.
-Proin nec sapien nec sapien cursus bibendum et in metus.
-Sed eget pharetra quam.
-Phasellus vitae nulla leo.
-Fusce lacinia placerat nulla, ac varius nisl venenatis nec.
-Nunc cursus dictum tortor eget ornare.
-Etiam sed erat vel felis tristique cursus.
-Nam finibus arcu dolor, sed ornare purus imperdiet sit amet.
-Cras porttitor quam vitae commodo lobortis.
-Mauris eu feugiat massa. Donec vestibulum diam imperdiet tempus sagittis.
-Nullam tristique nisl at euismod consequat.
+## Making a Table
+
+Tables can be created using Markdown syntax.
+@tbl-summary provides a summary of our hypothetical findings.
+As shown in @tbl-summary, the results are very promising.
+
+| Treatment | Group A | Group B |
+|-----------|---------|---------|
+| Control   | 25.4    | 28.1    |
+| Active    | 15.2    | 17.5    |
+
+: A summary of hypothetical results. {#tbl-summary}
+
+## Using Formulas
+
+We can also include mathematical formulas using LaTeX syntax.
+A block equation can be labeled and referenced.
+For instance, the quadratic formula is shown in @eq-quadratic.
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$ {#eq-quadratic}
+
+This is a fundamental equation in algebra.
+
+# Conclusion
+
+We have successfully demonstrated the core features of a Quarto manuscript, including plots (@fig-cars), tables (@tbl-summary), and equations (@eq-quadratic).
